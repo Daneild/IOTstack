@@ -6,8 +6,7 @@ zigbee2mqtt_assistant:
     - "8880:80"
   environment:
     - VIRTUAL_HOST=~^zigbee2mqtt_assistant\..*\.xip\.io
-    - Z2MA_SETTINGS__MQTTSERVER=mosquitto
+    - Z2MA_SETTINGS__MQTTSERVER=localhost
     - VIRTUAL_PORT=8880
- networks:
-    - iotstack_nw
+ hostmode: host
 
